@@ -6,7 +6,9 @@ import {Route , Switch} from 'react-router-dom'
 import MainLayout from './layouts/MainLayout'
 // pages
 import Homepage from './pages/home/index'
+import Products from './pages/products/';
 import Login from './pages/login/index'
+import About from './pages/about';
 // styles
 import './default.scss'
 
@@ -22,6 +24,16 @@ function App() {
         <Route path="/login" render={()=>(
           <MainLayout>
             <Login/>
+          </MainLayout>
+        )}/>
+        <Route path="/products" render={()=>(
+          <MainLayout>
+            <Products/>
+          </MainLayout>
+        )}/>
+        <Route path="/about" render={()=>(
+          <MainLayout>
+            <About/>
           </MainLayout>
         )}/>
       </Switch>
