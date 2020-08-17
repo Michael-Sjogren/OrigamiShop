@@ -1,0 +1,14 @@
+.header {
+    background-color: azure;
+    height: 6.5rem;
+    box-shadow: 5px 3px 10px rgba(27, 26, 26, 0.267);
+}
+
+.navigation ul{
+    display: flex;
+    font-weight: 700;
+    li {
+        margin-right: 3rem;
+        font-size: 1.8rem;
+    }
+}
