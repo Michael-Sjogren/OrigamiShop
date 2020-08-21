@@ -1,3 +1,5 @@
+@import 'vars.scss';
+
 html {
     font-size: 10px;
 }
@@ -5,6 +7,7 @@ html, body {
     margin:0;
     padding:0;
     height: 100%;
+
 }
 
 *, ::before, ::after {
@@ -20,8 +23,14 @@ body {
     font-weight: 400;
 }
 
+main{
+    margin: $element_spacing;
+    margin-bottom: 0;
+}
+
 a {
-    text-decoration: none
+    text-decoration: none;
+    color: $text-fg;
 }
 
 a, a:hover {
@@ -33,6 +42,11 @@ a, a:hover {
 ul {
     list-style: none;
     li {
-        margin-right: 1rem;
+        margin-right: .5rem;
     }
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
 }

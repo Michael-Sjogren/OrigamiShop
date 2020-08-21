@@ -5,7 +5,10 @@ const Header = props => {
   return (
     <header className="header">
       <nav className="navigation">
-        <ul>
+        
+
+        <span id="logo">ORIGAMI</span>
+        <ul className="container">
           <li>
             <Link to="/"> Home </Link>
           </li>
@@ -14,10 +17,10 @@ const Header = props => {
           </li>
 
           <li>
-            <Link to="/login"> Login </Link>
+            <Link to="/login"> Account </Link>
           </li>
           <li>
-            <Link to="/about"> About </Link>
+            <Link to="/about"> Cart </Link>
           </li>
         </ul>
       </nav>

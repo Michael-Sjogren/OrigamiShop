@@ -9,6 +9,7 @@ import Products from './pages/products';
 import Login from './pages/login/index'
 import About from './pages/about';
 // styles
+
 import './default.scss'
 
 function App() {

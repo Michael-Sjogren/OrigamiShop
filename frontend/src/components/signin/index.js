@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import Button from '../forms/button';
 
-import {signInWithGoogle} from '../../firebase/utils'
 class SignIn extends Component {
 
     submit = async e => {
@@ -12,7 +11,7 @@ class SignIn extends Component {
         <section className="signin">
             <h2>Sign In</h2>
             <form onSubmit={this.submit}>
-                <Button onClick={signInWithGoogle}>
+                <Button >
                     Sign in with google
                 </Button>
             </form>

@@ -5,7 +5,7 @@ const MainLayout = props => {
     return(
         <div>
             <Header/>
-            <main>
+            <main className="container-lg">
                 {props.children}
             </main>
             <Footer/>
