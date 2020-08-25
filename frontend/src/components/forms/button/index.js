@@ -4,10 +4,10 @@ import './style.scss'
 
 const Button = ({children, ...otherProps}) => {
     return (
-        <button className="btn" {...otherProps}>
+        <button className="button " {...otherProps}>
             {children}
         </button>
     )
 }
 
-export default Button
+export default Button;

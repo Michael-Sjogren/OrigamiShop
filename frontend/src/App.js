@@ -4,10 +4,10 @@ import {Route , Switch} from 'react-router-dom'
 // layouts
 import MainLayout from './layouts/MainLayout'
 // pages
-import Homepage from './pages/home/index'
-import Products from './pages/products';
-import Login from './pages/login/index'
-import About from './pages/about';
+import Homepage from './home/index'
+import Products from './products';
+import Login from './login/index'
+import About from './about';
 // styles
 
 import './default.scss'

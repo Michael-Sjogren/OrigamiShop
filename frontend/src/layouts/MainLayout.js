@@ -3,13 +3,13 @@ import Header from '../components/Header'
 import Footer from '../components/Footer';
 const MainLayout = props => {
     return(
-        <div>
+        <>
             <Header/>
-            <main className="container-lg">
+            <main className="container">
                 {props.children}
             </main>
             <Footer/>
-        </div>
+        </>
     )
 }
 

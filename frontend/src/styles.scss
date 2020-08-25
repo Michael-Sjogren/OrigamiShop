@@ -3,7 +3,11 @@
 
 .footer {
     background-color: $secondary;
-    height: 30rem;
+    height: 20rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 
@@ -16,9 +20,10 @@
 }
 
 .navigation {
+    text-transform: uppercase;
+    font-weight: 400;
     background-color: $secondary;
     color: $text-white;
-    font-weight: 600;
     height: 100%;
     width: 100%;
     display: flex;

@@ -2,12 +2,15 @@
 
 html {
     font-size: 10px;
+    height: 100%;
+}
+
+.app, #root {
+    min-height: 100vh;
 }
 html, body {
     margin:0;
     padding:0;
-    height: 100%;
-
 }
 
 *, ::before, ::after {
@@ -16,17 +19,33 @@ html, body {
     box-sizing: border-box;
 }
 
+h1 {
+    font-size: 6rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 2.4rem;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;
     line-height: 1;
+    min-height: 100%;
     font-weight: 400;
 }
 
-main{
-    margin: $element_spacing;
-    margin-bottom: 0;
-}
 
 a {
     text-decoration: none;
