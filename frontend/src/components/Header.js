@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import CartNavLink from '../shoppingcart/CartNavLink';
 
 const Header = props => {
   return (
@@ -20,7 +21,7 @@ const Header = props => {
             <Link to="/login"> Account </Link>
           </li>
           <li>
-            <Link to="/about"> Cart </Link>
+            <CartNavLink></CartNavLink>
           </li>
         </ul>
       </nav>

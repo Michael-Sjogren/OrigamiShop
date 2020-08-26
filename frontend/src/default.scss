@@ -69,3 +69,60 @@ ul {
     display: flex;
     flex-wrap: wrap;
 }
+
+
+.button {
+    transition: all .1s ease-in-out;
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+    background-color: $primary;
+    border-radius: 1.5rem;
+    background: rgb(227,91,32);
+    background: linear-gradient(90deg, rgba(227,91,32,1) 0%, rgba(236,126,46,1) 100%); 
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    width: 20rem;
+    height: 100%;
+    padding: 1.5rem;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.397);
+    &.small {
+        font-size: 1.2rem;
+        width: 8rem;
+    }
+
+    &.medium {
+
+    }
+
+    &.secondary {
+
+    }
+
+    &.large {
+
+    }
+
+    &.primary{
+        
+    }
+
+    &:hover,&:focus {
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.247);
+        color: white;
+        text-decoration: none;
+        background: rgb(226, 85, 24);
+        background: linear-gradient(90deg, rgb(226, 85, 24) 0%, rgb(211, 114, 44) 100%); 
+    }
+
+    &.flat {
+        border-radius: .5rem;
+        box-shadow: none;
+        &:hover,&:focus{
+            box-shadow: none;
+        }
+    }
+}

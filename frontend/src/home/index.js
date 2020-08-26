@@ -4,6 +4,12 @@ import squirrelOrigamis from '../assets/images/origamishop-squriells.png';
 import Product from '../components/product/Product';
 
 const Homepage = props => {
+    const product = {
+        name:"Some product name",
+        price: 32,
+        img: "",
+        imgAlt: "some alt",
+    }
     return (
         <section className="home mt-3 mb-5">
             <section className="intro">
@@ -22,13 +28,13 @@ const Homepage = props => {
             </section>
             <div className="row">
                 <div className="col-sm-12 col-md-4 col-lg-4">
-                    <Product></Product>
+                    <Product product={product}></Product>
                 </div>
                 <div className="col-sm-12 col-md-4 col-lg-4">
-                    <Product></Product>
+                    <Product product={product}></Product>
                 </div>
                 <div className="col-sm-12 col-md-4 col-lg-4">
-                    <Product></Product>
+                    <Product product={product}></Product>
                 </div>
             </div>
 
