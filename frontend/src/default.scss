@@ -1,13 +1,6 @@
 @import 'vars.scss';
+@import 'typography.scss';
 
-html {
-    font-size: 10px;
-    height: 100%;
-}
-
-.app, #root {
-    min-height: 100vh;
-}
 html, body {
     margin:0;
     padding:0;
@@ -19,31 +12,12 @@ html, body {
     box-sizing: border-box;
 }
 
-h1 {
-    font-size: 6rem;
-    font-weight: 600;
-}
 
-h2 {
-    font-size: 4rem;
-    font-weight: 600;
-}
-
-h3 {
-    font-size: 3rem;
-    font-weight: 600;
-}
-
-h4 {
-    font-size: 2.4rem;
-}
 
 body {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.6rem;
     line-height: 1;
     min-height: 100%;
-    font-weight: 400;
 }
 
 
@@ -60,9 +34,6 @@ a, a:hover {
 
 ul {
     list-style: none;
-    li {
-        margin-right: .5rem;
-    }
 }
 
 .flex {
@@ -81,17 +52,15 @@ ul {
     background: rgb(227,91,32);
     background: linear-gradient(90deg, rgba(227,91,32,1) 0%, rgba(236,126,46,1) 100%); 
     color: rgb(255, 255, 255);
-    font-weight: 600;
-    font-size: 1.6rem;
+    font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: .15rem;
-    width: 20rem;
+    width: 150px;
     height: 100%;
-    padding: 1.5rem;
+    padding: 12px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.397);
     &.small {
-        font-size: 1.2rem;
-        width: 8rem;
+        font-size: .8rem;
+        width: 70px;
     }
 
     &.medium {

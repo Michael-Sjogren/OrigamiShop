@@ -7,10 +7,10 @@ import MainLayout from './layouts/MainLayout'
 import Homepage from './home/index'
 import Products from './products';
 import Login from './login/index'
-import About from './about';
 // styles
 
 import './default.scss'
+import Checkout from './shoppingcart/Checkout';
 
 function App() {
   return (
@@ -31,9 +31,9 @@ function App() {
             <Products/>
           </MainLayout>
         )}/>
-        <Route path="/about" render={()=>(
+        <Route path="/checkout" render={()=>(
           <MainLayout>
-            <About/>
+            <Checkout/>
           </MainLayout>
         )}/>
       </Switch>

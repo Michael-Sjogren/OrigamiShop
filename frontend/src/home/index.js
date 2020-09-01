@@ -5,10 +5,11 @@ import Product from '../components/product/Product';
 
 const Homepage = props => {
     const product = {
+        id: 2,
         name:"Some product name",
         price: 32,
         img: "",
-        imgAlt: "some alt",
+        imgAlt: "some alt"
     }
     return (
         <section className="home mt-3 mb-5">

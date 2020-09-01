@@ -7,9 +7,9 @@ const Header = props => {
     <header className="header">
       <nav className="navigation">
         
-
-        <span id="logo">ORIGAMI</span>
-        <ul className="container">
+        <div className="container d-flex justify-content-between">
+        <span id="logo" className="">ORIGAMI</span>
+        <ul className="">
           <li>
             <Link to="/"> Home </Link>
           </li>
@@ -21,9 +21,10 @@ const Header = props => {
             <Link to="/login"> Account </Link>
           </li>
           <li>
-            <CartNavLink></CartNavLink>
+            <CartNavLink/>
           </li>
         </ul>
+        </div>
       </nav>
     </header>
   )

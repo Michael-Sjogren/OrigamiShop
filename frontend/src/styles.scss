@@ -1,9 +1,8 @@
 @import "_vars.scss";
 
-
 .footer {
     background-color: $secondary;
-    height: 20rem;
+    height: 5rem;
     color: white;
     display: flex;
     justify-content: center;
@@ -14,7 +13,7 @@
 
 .header {
     background-color: azure;
-    height: 7rem;
+    height: 3rem;
     width: 100%;
     box-shadow: 5px 3px 10px rgba(27, 26, 26, 0.267);
 }
@@ -32,22 +31,22 @@
 }
 
 #logo {
-    margin-left: 2rem;
+    margin-left: .5rem;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: .2rem;
-    font-size: 3rem;
+    font-size: 1.5rem;
+
 }
 .navigation ul{
     height: 100%;
     margin: 0;
-    justify-content: center;
+    justify-content: space-evenly;
     display: flex;
     li {
         height: 100%;
         align-self: center;
-        margin-right: 3rem;
-        font-size: 1.8rem;
+        margin-right: 2rem;
         display: flex;
         justify-content: center;
         align-items: center;
