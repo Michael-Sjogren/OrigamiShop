@@ -34,11 +34,12 @@ export const CartProduct = props => {
             <h4 className="text-center">{product.name}</h4>
                 <img className="text-center" src={product.img} alt={product.imgAlt}/>
                 <div className="d-flex card-body justify-content-between align-items-center">
-                <span className="price">${product.price}</span>
-
-                <Button onClick={()=> dispatch(addQuantityProduct(product.id))}  className="button small flat">+</Button>
-                <Button onClick={()=> dispatch(subQuantityProduct(product.id))}  className="button small flat">-</Button>
-                <span>{quantity}</span>
+                <span className="price">${product.price*quantity}</span>
+                <div className="d-flex justify-content-center align-items-center">
+                    <Button onClick={()=> dispatch(addQuantityProduct(product.id))}  className="button small flat">+</Button>
+                    <span className="mx-2">{quantity}</span>
+                    <Button onClick={()=> dispatch(subQuantityProduct(product.id))}  className="button small flat">-</Button>
+                </div>
 
             </div>
         </div>
