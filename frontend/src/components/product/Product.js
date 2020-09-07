@@ -3,7 +3,7 @@ import './style.scss';
 
 import Button from '../../components/forms/button/index';
 import { useDispatch } from 'react-redux';
-import { addProduct , addQuantityProduct , subQuantityProduct } from '../../redux/actions/cartActions';
+import { addProduct , addQuantityProduct , subQuantityProduct, removeProduct } from '../../redux/actions/cartActions';
 export const Product = props => {
         //const cart = useSelector(sate => sate.cart);
         const p = {
@@ -36,9 +36,10 @@ export const CartProduct = props => {
                 <div className="d-flex card-body justify-content-between align-items-center">
                 <span className="price">${product.price*quantity}</span>
                 <div className="d-flex justify-content-center align-items-center">
-                    <Button onClick={()=> dispatch(addQuantityProduct(product.id))}  className="button small flat">+</Button>
-                    <span className="mx-2">{quantity}</span>
                     <Button onClick={()=> dispatch(subQuantityProduct(product.id))}  className="button small flat">-</Button>
+                    <span className="mx-2 border p-2">{quantity}</span>
+                    <Button onClick={()=> dispatch(addQuantityProduct(product.id))}  className="button small flat">+</Button>
+                    <Button onClick={()=> dispatch(removeProduct(product.id))} className="ml-3 button small flat"> <i className="fa fa-trash"/></Button>
                 </div>
 
             </div>

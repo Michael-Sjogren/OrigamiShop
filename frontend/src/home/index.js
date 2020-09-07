@@ -4,13 +4,30 @@ import squirrelOrigamis from '../assets/images/origamishop-squriells.png';
 import Product from '../components/product/Product';
 
 const Homepage = props => {
-    const product = {
+
+    const products = [ 
+    {
         id: 2,
-        name:"Some product name",
+        name:"Dog",
         price: 32,
         img: "",
         imgAlt: "some alt"
-    }
+    },
+    {
+        id: 3,
+        name:"Black Swan",
+        price: 23,
+        img: "",
+        imgAlt: "some alt"
+    },
+    {
+        id: 5,
+        name:"Squirell",
+        price: 40,
+        img: "",
+        imgAlt: "some alt"
+    },
+    ];
     return (
         <section className="home mt-3 mb-5">
             <section className="intro">
@@ -28,15 +45,7 @@ const Homepage = props => {
             </div>
             </section>
             <div className="row">
-                <div className="col-sm-12 col-md-4 col-lg-4">
-                    <Product product={product}></Product>
-                </div>
-                <div className="col-sm-12 col-md-4 col-lg-4">
-                    <Product product={product}></Product>
-                </div>
-                <div className="col-sm-12 col-md-4 col-lg-4">
-                    <Product product={product}></Product>
-                </div>
+                {products.map( ( product , index) => <div key={index} className="col-sm-12 col-md-4 col-lg-4"><Product product={product}></Product></div>)}
             </div>
 
 
