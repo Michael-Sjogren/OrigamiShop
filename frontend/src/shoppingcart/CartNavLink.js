@@ -1,12 +1,11 @@
 import React from 'react';
-import {useSelector } from 'react-redux';
-
+import {useSelector, connect } from 'react-redux';
+import { addProduct , addQuantityProduct , subQuantityProduct} from '../redux/actions/cartActions';
 import './style.scss';
 import { Link } from 'react-router-dom';
 
 const CartNavLink = props => {
     const cart = useSelector( state => state.cart);
-    const cartItemCount = cart.products.reduce((a,b) => a.quantity + b.quantity , 0);
 
     
     return (
@@ -17,7 +16,7 @@ const CartNavLink = props => {
             <span className="cart-icon-container">
                     <i className="fa fa-shopping-cart"></i>
                     
-                    <span className={ cartItemCount > 0 ? 'cart-badge-show' : 'cart-badge-hidden' }> {cartItemCount}</span> 
+                    <span className={ cart.productCount > 0 ? 'cart-badge-show' : 'cart-badge-hidden' }> { cart.productCount }</span> 
             </span>
             </Link>
         </div>
@@ -25,4 +24,4 @@ const CartNavLink = props => {
     );
 }
 
-export default CartNavLink;
+export default connect(null,{addProduct , addQuantityProduct , subQuantityProduct}) (CartNavLink);
